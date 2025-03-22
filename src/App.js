@@ -130,7 +130,7 @@ function App() {
     },
     logo: {
       canBeDark: undefined,
-      element: <Image alt="boh logo" src="/boh.png" />,
+      element: <Image alt="boh logo" src="/bohlogo.png" />,
       link: '/',
       useFillTheme: true
     },
@@ -304,6 +304,18 @@ function App() {
       showSearch: true,
       simulateHeader: undefined
     }
+  }}
+  pageHeader={{
+    background: {
+      '500': '/bohbg.png',
+      '750': '/bohbg.png',
+      '1200': '/bohbg.png',
+      default: '/bohbg.png'
+    },
+    kicker: 'Macenas',
+    subtitle: 'We can help you study the Bible so you can find freedom, healing, and hope in jesus.',
+    title: 'A Call to be Unique–the Bible\'s plan for a fulfilled life by standing firm.',
+    url: '#est-doloremque-harum'
   }}
   sabbath={{
     backgroundImage: undefined,
