@@ -13,7 +13,7 @@ function App() {
   return (
     // The AlpsContextProvider and Body components are required as parents other ALPS-React components (normally in your App root)
     <AlpsContextProvider>
-      <Body primaryColor="bluejay" hasGrid l-wrap>
+      <Body primaryColor="denim" hasGrid l-wrap>
       <BasicPage
   footer={{
     address: {
@@ -137,7 +137,7 @@ function App() {
     primaryNav: {
       hasPriorityNav: false,
       items: [
-        {
+        /*{
           subnav: [
             {
               text: 'Assistant to the President for Evangelism',
@@ -157,6 +157,42 @@ function App() {
             }
           ],
           text: 'Leadership Certification',
+          url: '#'
+        },*/
+        {
+          text: 'Home',
+          url: '#'
+        },
+        {
+          subnav: [
+            {
+              text: 'Official Beliefs',
+              url: 'https://www.adventist.org/beliefs/'
+            },
+            {
+              text: 'Church Manual',
+              url: 'https://www.adventist.org/beliefs/'
+            },
+            {
+              subnav: [
+                {
+                  text: 'Pastor',
+                  url: '#'
+                },
+                {
+                  text: 'Elders',
+                  url: '#'
+                },
+                {
+                  text: 'Department Leaders',
+                  url: '#'
+                },
+              ],
+              text: 'Church Leaders',
+              url: '#'
+            },
+          ],
+          text: 'About Us',
           url: '#'
         },
         {
@@ -178,15 +214,16 @@ function App() {
               url: '#'
             }
           ],
-          text: 'Service'
+          text: 'Ministries',
+          url: '#'
         },
-        {
+        /*{
           active: true,
           text: 'Beliefs',
           url: '#'
-        },
-        {
-          priority: true,
+        },*/
+       /* {
+        //  priority: true,
           subnav: [
             {
               text: 'General Conference',
@@ -225,38 +262,38 @@ function App() {
           ],
           text: 'World Church',
           url: '#'
-        },
-        {
-          text: 'Information',
+        },*/
+        // {
+        //   subnav: [
+        //     {
+        //       text: 'News Item 1',
+        //       url: '#'
+        //     },
+        //     {
+        //       text: 'News Item 2',
+        //       url: '#'
+        //     },
+        //     {
+        //       text: 'News Item 3',
+        //       url: '#'
+        //     },
+        //     {
+        //       text: 'News Item 4',
+        //       url: '#'
+        //     }
+        //   ],
+        //   text: 'News',
+        //   url: '#'
+        // },
+         {
+          text: 'Contact Us',
           url: '#'
         },
-        {
-          subnav: [
-            {
-              text: 'News Item 1',
-              url: '#'
-            },
-            {
-              text: 'News Item 2',
-              url: '#'
-            },
-            {
-              text: 'News Item 3',
-              url: '#'
-            },
-            {
-              text: 'News Item 4',
-              url: '#'
-            }
-          ],
-          text: 'News',
-          url: '#'
-        }
       ]
     },
     secondaryNav: {
       items: [
-        {
+      /*{
           icon: 'language',
           subnav: [
             {
@@ -298,7 +335,7 @@ function App() {
           icon: 'heart',
           text: 'Press',
           url: '#'
-        }
+        }*/
       ],
       showMenu: true,
       showSearch: true,
@@ -307,10 +344,10 @@ function App() {
   }}
   pageHeader={{
     background: {
-      '500': '/bohbg.png',
-      '750': '/bohbg.png',
-      '1200': '/bohbg.png',
-      default: '/bohbg.png'
+      '500': '/bohbg.jpg',
+      '750': '/bohbg.jpg',
+      '1200': '/bohbg.jpg',
+      default: '/bohbg.jpg'
     },
     kicker: 'Macenas',
     subtitle: 'We can help you study the Bible so you can find freedom, healing, and hope in jesus.',
