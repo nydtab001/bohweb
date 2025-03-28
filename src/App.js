@@ -1,6 +1,8 @@
 //import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./pages/about.js";
 import { AlpsContextProvider } from 'alps-react'
 import { Body,/* Div, Button, Blockquote, MediaBlock,
   Sabbath, */BasicPage, Image
@@ -11,9 +13,10 @@ const date = new Date();
 
 function App() {
   return (
+    <Router>
     // The AlpsContextProvider and Body components are required as parents other ALPS-React components (normally in your App root)
     <AlpsContextProvider>
-      <Body primaryColor="denim" hasGrid l-wrap>
+      <Body primaryColor="denim" l-wrap>
       <BasicPage
   footer={{
     address: {
@@ -217,6 +220,16 @@ function App() {
           text: 'Ministries',
           url: '#'
         },
+        {
+          subnav: [
+            {
+              text: 'Sermons',
+              url: '#'
+            }
+          ],
+          text: 'Media',
+          url: '#'
+        },
         /*{
           active: true,
           text: 'Beliefs',
@@ -363,6 +376,7 @@ function App() {
 />
       </Body>
     </AlpsContextProvider>
+    </Router>
   )
 }
 export default App;
