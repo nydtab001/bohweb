@@ -16,12 +16,12 @@ function Home() {
         <BasicPage
         footer={{
             address: {
-              country: 'Zimbabwe',
-              locality: 'Bulawayo',
+              country: undefined,
+              locality: undefined,
               phone: undefined,
               postcode: undefined,
               region: undefined,
-              street: 'Corner 5th & Josiah Tongogara',
+              street: undefined,
             },
             copyright: 'Copyright ©'+date.getFullYear()+' General Conference of Seventh-day Adventists',
             primaryNav: {

@@ -296,7 +296,7 @@ function About() {
                     // },
                      {
                       text: 'Contact Us',
-                      url: '#'
+                      url: '/contact'
                     },
                   ]
                 },
