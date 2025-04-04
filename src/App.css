@@ -38,8 +38,9 @@
 }
 
 .contact-card {
-  max-width: 400px;
+  max-width: 100%;
   padding: 20px;
+  margin-left: 20px;
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -52,4 +53,31 @@
 
 .contact-card address {
   line-height: 1.5;
+}
+
+.operating-hours {
+  background-color: #f9f9f9;
+  margin-top: 50px !important;
+  margin-left: 20px !important;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.operating-hours h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.operating-hours ul {
+  list-style: none;
+  padding: 0;
+}
+
+.operating-hours li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
 }

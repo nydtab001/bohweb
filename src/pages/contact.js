@@ -13,12 +13,33 @@ const date = new Date();
 function Contact(){
     return (
         <AlpsContextProvider>
-          <Body primaryColor="denim" hasGrid l-wrap>
+          <Body primaryColor="denim" l-wrap>
             <BasicPage
+                aside={<>
+                <div class="contact-card">
+                            <address>
+                            <h3>Address</h3>
+                                <p><strong>Beacon of Hope Adventist Church</strong></p>
+                                <p>Corner 5th & Josiah Tongogara, Bulawayo, Zimbabwe</p>
+                                <p><a href="tel:+263123456789">+263 12 345 6789</a></p>
+                                <p><a href="mailto:info@bohchurch.org">info@bohchurch.org</a></p>
+                                </address>
+                        </div>
+                <section class="operating-hours">
+                  <h2>Operating Hours</h2>
+                  <ul>
+                    <li><strong>Church Office:</strong> Monday – Friday, 8:00 AM – 4:30 PM</li>
+                    <li><strong>Sabbath School:</strong> Saturday, 9:00 AM – 10:00 AM</li>
+                    <li><strong>Main Service:</strong> Saturday, 10:30 AM – 12:00 PM</li>
+                    <li><strong>Afternoon Service:</strong> Saturday, 2:00 PM – 4:00 PM</li>
+                    <li><strong>Vespers:</strong> Saturday, Sunset</li>
+                  </ul>
+                </section>
+                </>}
                 breadcrumbs={[]}
                 content={<>
-                <h1>Contact Us</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.5647251692935!2d28.58464908885497!3d-20.152199099999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eb55470512b2437%3A0xb244424c1d9f31cd!2sBeacon%20of%20Hope%20Adventist%20Church!5e0!3m2!1sen!2szw!4v1743457677845!5m2!1sen!2szw" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.5647251692935!2d28.58464908885497!3d-20.152199099999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eb55470512b2437%3A0xb244424c1d9f31cd!2sBeacon%20of%20Hope%20Adventist%20Church!5e0!3m2!1sen!2szw!4v1743457677845!5m2!1sen!2szw" width="100%" height="450" style={{border:0, paddingLeft:'20px'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div style={{width:'100%', height:'fit-content'}}>
                         
                         <div class="contact-card">
