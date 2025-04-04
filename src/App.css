@@ -37,6 +37,23 @@
   }
 }
 
+#contact_address {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  line-height: 1.6;
+}
+
+#contact_address a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contact_address a:hover {
+  text-decoration: underline;
+}
+
 .contact-card {
   max-width: 100%;
   padding: 20px;
@@ -57,7 +74,7 @@
 
 .operating-hours {
   background-color: #f9f9f9;
-  margin-top: 50px !important;
+  margin-top: 30px !important;
   margin-left: 20px !important;
   padding: 1.5rem;
   border-radius: 8px;

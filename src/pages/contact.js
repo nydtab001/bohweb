@@ -16,8 +16,9 @@ function Contact(){
           <Body primaryColor="denim" l-wrap>
             <BasicPage
                 aside={<>
+                
                 <div class="contact-card">
-                            <address>
+                            <address id="contact_address">
                             <h3>Address</h3>
                                 <p><strong>Beacon of Hope Adventist Church</strong></p>
                                 <p>Corner 5th & Josiah Tongogara, Bulawayo, Zimbabwe</p>
@@ -42,15 +43,7 @@ function Contact(){
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.5647251692935!2d28.58464908885497!3d-20.152199099999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eb55470512b2437%3A0xb244424c1d9f31cd!2sBeacon%20of%20Hope%20Adventist%20Church!5e0!3m2!1sen!2szw!4v1743457677845!5m2!1sen!2szw" width="100%" height="450" style={{border:0, paddingLeft:'20px'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div style={{width:'100%', height:'fit-content'}}>
                         
-                        <div class="contact-card">
-                            <address>
-                            <h3>Address</h3>
-                                <p><strong>Beacon of Hope Adventist Church</strong></p>
-                                <p>Corner 5th & Josiah Tongogara, Bulawayo, Zimbabwe</p>
-                                <p><a href="tel:+263123456789">+263 12 345 6789</a></p>
-                                <p><a href="mailto:info@bohchurch.org">info@bohchurch.org</a></p>
-                                </address>
-                        </div>
+                        
                     </div>
                     </>}
               footer={{
@@ -67,11 +60,11 @@ function Contact(){
                             items: [
                               {
                                 text: 'Facebook',
-                                url: '#'
+                                url: 'https://www.facebook.com/beaconofhopezw'
                               },
                               {
                                 text: 'YouTube',
-                                url: '#'
+                                url: 'https://www.youtube.com/@beaconofhopesdazw'
                               },
                               {
                                 text: 'Email',
@@ -98,51 +91,6 @@ function Contact(){
                       aboutLeft: 'Tell the world is an offical media production of the Seventh-day Adventist world church.',
                       aboutRight: 'Seventh-day Adventists are devoted to helping people understand the Bible to find freedom, healing and hope.',
                       hasPriorityNav: false,
-                      items: [
-                        {
-                          icon: 'language',
-                          subnav: [
-                            {
-                              text: 'English',
-                              url: '/en'
-                            },
-                            {
-                              text: 'Español',
-                              url: '/es'
-                            },
-                            {
-                              text: 'Português',
-                              url: '/pt'
-                            },
-                            {
-                              text: 'Français',
-                              url: '/fr'
-                            }
-                          ],
-                          text: 'Language',
-                          url: '#'
-                        },
-                        {
-                          icon: 'subscribe',
-                          text: 'Sitemap',
-                          url: '#'
-                        },
-                        {
-                          icon: 'find',
-                          text: 'Find a Church',
-                          url: '#'
-                        },
-                        {
-                          icon: 'contact',
-                          text: 'Contact',
-                          url: '#'
-                        },
-                        {
-                          icon: 'heart',
-                          text: 'Press',
-                          url: '#'
-                        }
-                      ],
                       search: {
                         onSearch: undefined,
                         placeholder: 'Search...',

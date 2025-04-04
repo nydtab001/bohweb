@@ -28,28 +28,16 @@ function Home() {
               items: [
                 {
                   text: 'Facebook',
-                  url: '#'
-                },
-                {
-                  text: 'Twitter',
-                  url: '#'
+                  url: 'https://www.facebook.com/beaconofhopezw'
                 },
                 {
                   text: 'YouTube',
-                  url: '#'
-                },
-                {
-                  text: 'Vimeo',
-                  url: '#'
+                  url: 'https://www.youtube.com/@beaconofhopesdazw'
                 },
                 {
                   text: 'Email',
                   url: '#'
                 },
-                {
-                  text: 'Feedback',
-                  url: '#'
-                }
               ]
             },
             secondaryNav: {
@@ -71,51 +59,51 @@ function Home() {
         aboutLeft: 'Tell the world is an offical media production of the Seventh-day Adventist world church.',
         aboutRight: 'Seventh-day Adventists are devoted to helping people understand the Bible to find freedom, healing and hope.',
         hasPriorityNav: false,
-        items: [
-          {
-            icon: 'language',
-            subnav: [
-              {
-                text: 'English',
-                url: '/en'
-              },
-              {
-                text: 'Español',
-                url: '/es'
-              },
-              {
-                text: 'Português',
-                url: '/pt'
-              },
-              {
-                text: 'Français',
-                url: '/fr'
-              }
-            ],
-            text: 'Language',
-            url: '#'
-          },
-          {
-            icon: 'subscribe',
-            text: 'Sitemap',
-            url: '#'
-          },
-          {
-            icon: 'find',
-            text: 'Find a Church',
-            url: '#'
-          },
-          {
-            icon: 'contact',
-            text: 'Contact',
-            url: '#'
-          },
-          {
-            icon: 'heart',
-            text: 'Press',
-            url: '#'
-          }
-        ],
+        // items: [
+        //   {
+        //     icon: 'language',
+        //     subnav: [
+        //       {
+        //         text: 'English',
+        //         url: '/en'
+        //       },
+        //       {
+        //         text: 'Español',
+        //         url: '/es'
+        //       },
+        //       {
+        //         text: 'Português',
+        //         url: '/pt'
+        //       },
+        //       {
+        //         text: 'Français',
+        //         url: '/fr'
+        //       }
+        //     ],
+        //     text: 'Language',
+        //     url: '#'
+        //   },
+        //   {
+        //     icon: 'subscribe',
+        //     text: 'Sitemap',
+        //     url: '#'
+        //   },
+        //   {
+        //     icon: 'find',
+        //     text: 'Find a Church',
+        //     url: '#'
+        //   },
+        //   {
+        //     icon: 'contact',
+        //     text: 'Contact',
+        //     url: '#'
+        //   },
+        //   {
+        //     icon: 'heart',
+        //     text: 'Press',
+        //     url: '#'
+        //   }
+        // ],
         search: {
           onSearch: undefined,
           placeholder: 'Search...',
