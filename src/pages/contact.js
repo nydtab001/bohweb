@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from 'react-helmet'
 //import logo from './logo.svg';
 //import './App.css';
 import '../App.css';
@@ -13,6 +14,11 @@ const date = new Date();
 function Contact(){
     return (
         <AlpsContextProvider>
+          <Helmet>
+        <title>
+          Contact Us - Beacon of Hope Sevnth-day Adventist Church
+        </title>
+      </Helmet>
           <Body primaryColor="denim" l-wrap>
             <BasicPage
                 aside={<>
@@ -55,7 +61,7 @@ function Contact(){
                             region: undefined,
                             street: undefined,
                           },
-                          copyright: 'Copyright ©'+date.getFullYear()+' General Conference of Seventh-day Adventists',
+                          copyright: 'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Church',
                           primaryNav: {
                             items: [
                               {
@@ -84,7 +90,7 @@ function Contact(){
                               }
                             ]
                           },
-                          text: 'Adventist.org is the Official website of the Seventh-day Adventist world church'
+                          text: 'boh.org is the Official website of Beacon of Hope Seventh-Day Adventist Church, Zimbabwe'
               }}
               header={{
                     drawer: {

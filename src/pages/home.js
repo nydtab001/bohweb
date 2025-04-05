@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 //import './App.css';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { AlpsContextProvider } from 'alps-react'
 import { Body,/* Div, Button, Blockquote, MediaBlock,
   Sabbath, */BasicPage, Image
@@ -12,6 +13,11 @@ const date = new Date();
 function Home() {
     return (
       <AlpsContextProvider>
+        <Helmet>
+                <title>
+                  Beacon of Hope Sevnth-day Adventist Church
+                </title>
+              </Helmet>
         <Body primaryColor="denim" l-wrap>
         <BasicPage
         footer={{

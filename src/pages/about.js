@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 //import logo from './logo.svg';
 //import './App.css';
 import { AlpsContextProvider } from 'alps-react'
@@ -12,18 +13,23 @@ const date = new Date();
 function About() {
   return (
     <AlpsContextProvider>
+      <Helmet>
+        <title>
+          About Us - Beacon of Hope Sevnth-day Adventist Church
+        </title>
+      </Helmet>
       <Body primaryColor="denim" l-wrap>
         <BasicPage
           footer={{
-                      address: {
-                        country: 'Zimbabwe',
-                        locality: 'Bulawayo',
-                        phone: undefined,
-                        postcode: undefined,
-                        region: undefined,
-                        street: 'Corner 5th & Josiah Tongogara',
-                      },
-                      copyright: 'Copyright ©'+date.getFullYear()+' General Conference of Seventh-day Adventists',
+            address: {
+              country: undefined,
+              locality: undefined,
+              phone: undefined,
+              postcode: undefined,
+              region: undefined,
+              street: undefined,
+            },
+                      copyright: 'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Church',
                       primaryNav: {
                         items: [
                           {
