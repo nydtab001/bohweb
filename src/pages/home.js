@@ -42,7 +42,7 @@ function Home() {
                 },
                 {
                   text: 'Email',
-                  url: '#'
+                  url: 'beaconofhope@wzc.adventist.org'
                 },
               ]
             },
@@ -208,7 +208,7 @@ function Home() {
               }
             ],
             text: 'Ministries',
-            url: '#'
+            url: '/ministries'
           },
           {
             subnav: [

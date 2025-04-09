@@ -10,15 +10,16 @@ import { Body,/* Div, Button, Blockquote, MediaBlock,
 
 const date = new Date();
 
-function About() {
+function Ministries() {
   return (
     <AlpsContextProvider>
       <Helmet>
         <title>
-          About Us - Beacon of Hope Sevnth-day Adventist Church
+          Ministries - Beacon of Hope Sevnth-day Adventist Church
         </title>
       </Helmet>
-      <Body primaryColor="denim" l-wrap>
+      <Body primaryColor="denim" hasGrid l-wrap>
+        <div style={{backgroundColor:"rgba(0,0,255,1)"}}>
         <BasicPage
           footer={{
             address: {
@@ -302,7 +303,7 @@ function About() {
                 }
           }}
           pageHeader={{
-                title: 'About Us',
+                title: 'Ministries',
           }}
           sabbath={{
                 backgroundImage: undefined,
@@ -311,9 +312,10 @@ function About() {
                 stickyLogo: true
           }}
         />
+        </div>
       </Body>
     </AlpsContextProvider>
   );
 }
 
-export default About;
+export default Ministries;

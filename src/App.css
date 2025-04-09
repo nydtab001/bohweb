@@ -40,13 +40,13 @@
 #contact_address {
   background-color: #f8f9fa;
   padding: 15px;
-  border-left: 5px solid #007bff;
+  border-left: 5px solid #04132b;
   border-radius: 5px;
   line-height: 1.6;
 }
 
 #contact_address a {
-  color: #007bff;
+  color: #04132b;
   text-decoration: none;
 }
 
@@ -57,11 +57,20 @@
 .contact-card {
   max-width: 100%;
   padding: 20px;
-  margin-left: 20px;
+  margin-left: 0px;
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card2{
+  
+  
+  padding: 1rem 0;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  
 }
 
 .contact-card h3 {
@@ -75,7 +84,7 @@
 .operating-hours {
   background-color: #f9f9f9;
   margin-top: 30px !important;
-  margin-left: 20px !important;
+  margin-left: 0px !important;
   padding: 1.5rem;
   border-radius: 8px;
   max-width: 100%;
@@ -97,4 +106,71 @@
   padding: 0.5rem 0;
   font-size: 1rem;
   color: #555;
+}
+
+.department-contacts {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.department-contacts h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+.church-contact {
+  background-color: #e6f0ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.church-contact h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.church-contact a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.church-contact a:hover {
+  text-decoration: underline;
+}
+
+.pastor-contact {
+  background-color: #fff4e6;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.pastor-contact h2 {
+  color: #cc6600;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.pastor-contact a {
+  color: #cc6600;
+  text-decoration: none;
+}
+
+.pastor-contact a:hover {
+  text-decoration: underline;
+}
+
+.department-contacts h2{
+  text-align: left;
 }
