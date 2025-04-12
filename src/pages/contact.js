@@ -159,8 +159,15 @@ function Contact(){
                           secondaryNav: {
                             items: [
                               {
-                                text: 'Trademark and Logo Usage',
-                                url: '#'
+                                  text: (
+                                    <>
+                                    <h3 style={{fontSize:22,textTransform: "none",paddingTop:"5px"}}><strong>Quick Links</strong></h3>
+                                    <br/>
+                                    <br/>
+                                    </>
+                                  ),
+                                  //url: 'https://www.facebook.com/beaconofhopezw'
+                                
                               },
                               {
                                 text: 'Legal Notice',
