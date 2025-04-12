@@ -20,6 +20,7 @@ function Contact(){
         </title>
       </Helmet>
           <Body primaryColor="denim" l-wrap>
+            
             <BasicPage style={{whiteSpace: 'pre-line'}}
                 aside={<>
                 
@@ -34,12 +35,12 @@ function Contact(){
                         </div>
                 <section class="operating-hours">
                   <h2>Service Times</h2>
-                  <ul>
-                    <li><strong>Sabbath School:</strong> Saturday, 9:00 AM – 10:00 AM</li>
-                    <li><strong>Main Service:</strong> Saturday, 10:30 AM – 12:00 PM</li>
-                    <li><strong>Afternoon Service:</strong> Saturday, 2:00 PM – 4:00 PM</li>
-                    <li><strong>Vespers:</strong> Saturday, Sunset</li>
-                  </ul>
+                  <div>
+<strong>Sabbath School:</strong> Saturday, 9:00 AM –
+<strong>Main Service:</strong> Saturday, 10:30 AM –
+<strong>Afternoon Service:</strong> Saturday, 2:00 PM 
+<strong>Vespers:</strong> Saturda
+                  </div>
                 </section>
                 </>}
                 breadcrumbs={[]}
@@ -86,28 +87,73 @@ function Contact(){
                     </>}
               footer={{
                           address: {
-                            country: undefined,
-                            locality: undefined,
-                            phone: undefined,
-                            postcode: undefined,
-                            region: undefined,
-                            street: undefined,
+                            
                           },
-                          copyright: 'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Church',
+                          copyright: (
+                            <>
+                            <div style={{width:"100%",backgroundColor:"red",height:5}}>
+                            <br>
+                            </br>
+                            <br>
+                            </br>
+                            </div>
+                            </>
+                          ) ,
+                          //'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Churchghgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhmmmmmmmmmmmmmmmmmmmmmmmmmmm',
                           primaryNav: {
                             items: [
                               {
-                                text: 'Facebook',
-                                url: 'https://www.facebook.com/beaconofhopezw'
+                                text: (
+                                  <>
+                                  <h3 style={{fontSize:22,textTransform: "none",paddingTop:"5px"}}><strong>Quick Links</strong></h3>
+                                  <br/>
+                                  <br/>
+                                  </>
+                                ),
+                                //url: 'https://www.facebook.com/beaconofhopezw'
                               },
                               {
-                                text: 'YouTube',
-                                url: 'https://www.youtube.com/@beaconofhopesdazw'
+                                text:(
+                                  <>
+                                  <div style={{textTransform:"none",fontSize:18,fontWeight:"normal"}}>
+                                      Home
+                                  </div>
+                                  </>
+                                ),
+                                url:'/'
                               },
                               {
-                                text: 'Email',
-                                url: 'beaconofhope@wzc.adventist.org'
+                                text: (
+                                  <>
+                                  <div style={{textTransform:"none",fontSize:18,fontWeight:"normal"}}>
+                                      About Us
+                                  </div>
+                                  </>
+                                ),
+                               // url: 'https://www.youtube.com/@beaconofhopesdazw'
+                               url: '/about'
                               },
+                              {
+                                text: (
+                                  <>
+                                  <div style={{textTransform:"none",fontSize:18,fontWeight:"normal"}}>
+                                      Ministries
+                                  </div>
+                                  </>
+                                ),
+                                url: '/ministries'
+                               // url: 'beaconofhope@wzc.adventist.org'
+                              },
+                              {
+                                text: (
+                                  <>
+                                  <div style={{textTransform:"none",fontSize:18,fontWeight:"normal"}}>
+                                      Contact
+                                  </div>
+                                  </>
+                                ),
+                                url: '/contact'
+                              }
                             ]
                           },
                           secondaryNav: {
@@ -260,6 +306,9 @@ function Contact(){
                     stickyLogo: true
               }}
             />
+            <div style={{backgroundColor:"#708090",color:"white",width:"calc((100vw / 7) * 6 - 0.01px)", padding: "1rem 1.25rem",left:0,position:"absolute",bottom:"0",zIndex:999}}>
+                              <strong>{'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Church'}</strong>
+                            </div>
           </Body>
         </AlpsContextProvider>
       );
