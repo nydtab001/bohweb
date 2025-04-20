@@ -153,28 +153,52 @@ function Contact(){
                                   </>
                                 ),
                                 url: '/contact'
-                              }
-                            ]
-                          },
-                          secondaryNav: {
-                            items: [
+                              },
                               {
-                                  text: (
+                                text: (
                                     <>
+                                    <br/>
+                                    <br/>
                                     <h3 style={{fontSize:22,textTransform: "none",paddingTop:"5px"}}><strong>Quick Links</strong></h3>
                                     <br/>
                                     <br/>
                                     </>
                                   ),
-                                  //url: 'https://www.facebook.com/beaconofhopezw'
-                                
                               },
                               {
-                                text: 'Legal Notice',
-                                url: '#'
+                                text: (
+                                  <>
+                                  <div style={{textTransform:"none",fontSize:18,fontWeight:"normal"}}>
+                                      Contact
+                                  </div>
+                                  </>
+                                ),
+                                url: '/contact'
                               }
                             ]
                           },
+                          // secondaryNav: {
+                          //   items: [
+                          //     {
+                          //         text: (
+                          //           <>
+                          //           <h3 style={{fontSize:22,textTransform: "none",paddingTop:"5px"}}><strong>Quick Links</strong></h3>
+                          //           <br/>
+                          //           <br/>
+                          //           </>
+                          //         ),
+                          //         //url: 'https://www.facebook.com/beaconofhopezw'
+                                
+                          //     },
+                          //     {
+                          //       text: 'Legal Notice',
+                          //       url: '#'
+                          //     },
+                          //     {
+                          //       text: 'jhgjhgj'
+                          //     }
+                          //   ]
+                          // },
                           text: (
                             <>
                               <h3 style={{fontSize:22}}><strong>Service Times</strong></h3>
@@ -313,9 +337,9 @@ function Contact(){
                     stickyLogo: true
               }}
             />
-            <div style={{backgroundColor:"#708090",color:"white",width:"calc((100vw / 7) * 6 - 0.01px)", padding: "1rem 1.25rem",left:0,position:"absolute",bottom:"0",zIndex:999}}>
+            {/* <div style={{backgroundColor:"#708090",color:"white",width:"calc((100vw / 7) * 6 - 0.01px)", padding: "1rem 1.25rem",left:0,position:"absolute",bottom:"0",zIndex:999}}>
                               <strong>{'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Church'}</strong>
-                            </div>
+                            </div> */}
           </Body>
         </AlpsContextProvider>
       );
