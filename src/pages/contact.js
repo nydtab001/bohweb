@@ -162,7 +162,25 @@ function Contact(){
                               }
                             ]
                           },
-                          
+                          secondaryNav: {
+                            items: [
+                              {
+                                  text: (
+                                    <>
+                                    <h3 style={{fontSize:22,textTransform: "none",paddingTop:"5px"}}><strong>Quick Links</strong></h3>
+                                    <br/>
+                                    <br/>
+                                    </>
+                                  ),
+                                  //url: 'https://www.facebook.com/beaconofhopezw'
+                                
+                              },
+                              {
+                                text: 'Legal Notice',
+                                url: '#'
+                              }
+                            ]
+                          },
                           text: (
                             <>
                               <h3 style={{fontSize:22}}><strong>Service Times</strong></h3>
@@ -303,9 +321,9 @@ function Contact(){
                     stickyLogo: true
               }}
             />
-            <div style={{backgroundColor:"#708090",color:"white",width:"calc((100vw / 7) * 6 - 0.01px)", padding: "1rem 1.25rem",left:0,position:"absolute",bottom:"0",zIndex:999,display:"none"}}>
+            <div style={{backgroundColor:"#708090",color:"white",width:"calc((100vw / 7) * 6 - 0.01px)", padding: "1rem 1.25rem",left:0,position:"absolute",bottom:"0",zIndex:999}}>
                               <strong>{'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Church'}</strong>
-                            </div>
+                            </div> */}
           </Body>
         </AlpsContextProvider>
       );
