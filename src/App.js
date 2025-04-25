@@ -6,7 +6,8 @@ import About from "./pages/about.js";
 import Home from "./pages/home.js";
 import Contact from './pages/contact.js';
 import Ministries from './pages/ministries.js';
-import { AlpsContextProvider } from 'alps-react'
+
+
 import { Body,/* Div, Button, Blockquote, MediaBlock,
   Sabbath, */BasicPage
 } from './alps-components'; // Import from your custom file

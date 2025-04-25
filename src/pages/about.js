@@ -7,6 +7,8 @@ import { Body,/* Div, Button, Blockquote, MediaBlock,
   Sabbath, */BasicPage, Image
 } from '../alps-components'; // Import from your custom file
 //import { BOH } from './boh';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const date = new Date();
 
@@ -20,46 +22,99 @@ function About() {
       </Helmet>
       <Body primaryColor="denim" l-wrap>
         <BasicPage
-          footer={{
-            address: {
-              country: undefined,
-              locality: undefined,
-              phone: undefined,
-              postcode: undefined,
-              region: undefined,
-              street: undefined,
-            },
-                      copyright: 'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Church',
-                      primaryNav: {
-                        items: [
-                          {
-                            text: 'Facebook',
-                            url: 'https://www.facebook.com/beaconofhopezw'
-                          },
-                          {
-                            text: 'YouTube',
-                            url: 'https://www.youtube.com/@beaconofhopesdazw'
-                          },
-                          {
-                            text: 'Email',
-                            url: 'beaconofhope@wzc.adventist.org'
-                          },
-                        ]
-                      },
-                      secondaryNav: {
-                        items: [
-                          {
-                            text: 'Trademark and Logo Usage',
-                            url: '#'
-                          },
-                          {
-                            text: 'Legal Notice',
-                            url: '#'
-                          }
-                        ]
-                      },
-                      text: 'Adventist.org is the Official website of the Seventh-day Adventist world church'
-          }}
+           footer={{
+                                    address: {
+                                      
+                                    },
+                                    copyright: (
+                                      <>
+                                      <div style={{width:"100%",display:"flex"}}>
+                                      <FontAwesomeIcon icon={faFacebookF} style={{fontSize:22,paddingRight:"1rem"}}/>
+                                      <FontAwesomeIcon icon={faYoutube} style={{fontSize:22,paddingRight:"1rem"}}/>
+                                      <FontAwesomeIcon icon={faInstagram} style={{fontSize:22,paddingRight:"1rem"}}/>
+                                      <br>
+                                      </br>
+                                      </div>
+                                      <div style={{marginTop:"1rem"}}>
+                                      Copyright ©{date.getFullYear()} Beacon of Hope Seventh-Day Adventist Church
+                                      </div>
+                                      </>
+                                    ) ,
+                                  //  'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Churchghgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhmmmmmmmmmmmmmmmmmmmmmmmmmmm',
+                                    primaryNav: {
+                                      items: [
+                                        {
+                                          text: (
+                                            <>
+                                            <h3 style={{fontSize:22,textTransform: "none",paddingTop:"5px"}}><strong>Quick Links</strong></h3>
+                                            <br/>
+                                            <br/>
+                                            </>
+                                          ),
+                                          //url: 'https://www.facebook.com/beaconofhopezw'
+                                        },
+                                        {
+                                          text:(
+                                            <>
+                                            <div style={{textTransform:"none",fontSize:18,fontWeight:"normal"}}>
+                                                Home
+                                            </div>
+                                            </>
+                                          ),
+                                          url:'/'
+                                        },
+                                        {
+                                          text: (
+                                            <>
+                                            <div style={{textTransform:"none",fontSize:18,fontWeight:"normal"}}>
+                                                About Us
+                                            </div>
+                                            </>
+                                          ),
+                                         // url: 'https://www.youtube.com/@beaconofhopesdazw'
+                                         url: '/about'
+                                        },
+                                        {
+                                          text: (
+                                            <>
+                                            <div style={{textTransform:"none",fontSize:18,fontWeight:"normal"}}>
+                                                Ministries
+                                            </div>
+                                            </>
+                                          ),
+                                          url: '/ministries'
+                                         // url: 'beaconofhope@wzc.adventist.org'
+                                        },
+                                        {
+                                          text: (
+                                            <>
+                                            <div style={{textTransform:"none",fontSize:18,fontWeight:"normal"}}>
+                                                Contact
+                                            </div>
+                                            </>
+                                          ),
+                                          url: '/contact'
+                                        }
+                                      ]
+                                    },
+                                    
+                                    text: (
+                                      <>
+                                        <h3 style={{fontSize:22}}><strong>Service Times</strong></h3>
+                                        <br />
+                                        <div style={{fontSize:18,lineHeight:'1.8'}}>
+                                        <strong>Sabbath School:</strong> Saturday, 9:00 AM – 10:00 AM
+                                        <br />
+                                        <strong>Main Service:</strong> Saturday, 10:30 AM – 12:00 PM
+                                        <br />
+                                        <strong>Afternoon Service:</strong> Saturday, 2:00 PM – 4:00 PM
+                                        <br />
+                                        <strong>Vespers:</strong> Saturday, Sunset</div>
+                                        <br />
+                                        <br />
+                                      </>
+                                    ),
+                        }}
           header={{
                 drawer: {
                   aboutLeft: 'Tell the world is an offical media production of the Seventh-day Adventist world church.',

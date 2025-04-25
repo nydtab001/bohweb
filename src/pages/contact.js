@@ -7,6 +7,8 @@ import { AlpsContextProvider } from 'alps-react'
 import { Body,/* Div, Button, Blockquote, MediaBlock,
   Sabbath, */BasicPage, Image
 } from '../alps-components'; // Import from your custom file
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 //import { BOH } from './boh';
 
 const date = new Date();
@@ -91,15 +93,19 @@ function Contact(){
                           },
                           copyright: (
                             <>
-                            <div style={{width:"100%",backgroundColor:"red",height:5}}>
-                            <br>
-                            </br>
+                            <div style={{width:"100%",display:"flex"}}>
+                            <FontAwesomeIcon icon={faFacebookF} style={{fontSize:22,paddingRight:"1rem"}}/>
+                            <FontAwesomeIcon icon={faYoutube} style={{fontSize:22,paddingRight:"1rem"}}/>
+                            <FontAwesomeIcon icon={faInstagram} style={{fontSize:22,paddingRight:"1rem"}}/>
                             <br>
                             </br>
                             </div>
+                            <div style={{marginTop:"1rem"}}>
+                            Copyright ©{date.getFullYear()} Beacon of Hope Seventh-Day Adventist Church
+                            </div>
                             </>
                           ) ,
-                          //'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Churchghgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhmmmmmmmmmmmmmmmmmmmmmmmmmmm',
+                        //  'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Churchghgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhmmmmmmmmmmmmmmmmmmmmmmmmmmm',
                           primaryNav: {
                             items: [
                               {
@@ -156,25 +162,7 @@ function Contact(){
                               }
                             ]
                           },
-                          secondaryNav: {
-                            items: [
-                              {
-                                  text: (
-                                    <>
-                                    <h3 style={{fontSize:22,textTransform: "none",paddingTop:"5px"}}><strong>Quick Links</strong></h3>
-                                    <br/>
-                                    <br/>
-                                    </>
-                                  ),
-                                  //url: 'https://www.facebook.com/beaconofhopezw'
-                                
-                              },
-                              {
-                                text: 'Legal Notice',
-                                url: '#'
-                              }
-                            ]
-                          },
+                          
                           text: (
                             <>
                               <h3 style={{fontSize:22}}><strong>Service Times</strong></h3>
@@ -187,6 +175,8 @@ function Contact(){
                               <strong>Afternoon Service:</strong> Saturday, 2:00 PM – 4:00 PM
                               <br />
                               <strong>Vespers:</strong> Saturday, Sunset</div>
+                              <br />
+                              <br />
                             </>
                           ),
               }}
@@ -313,7 +303,7 @@ function Contact(){
                     stickyLogo: true
               }}
             />
-            <div style={{backgroundColor:"#708090",color:"white",width:"calc((100vw / 7) * 6 - 0.01px)", padding: "1rem 1.25rem",left:0,position:"absolute",bottom:"0",zIndex:999}}>
+            <div style={{backgroundColor:"#708090",color:"white",width:"calc((100vw / 7) * 6 - 0.01px)", padding: "1rem 1.25rem",left:0,position:"absolute",bottom:"0",zIndex:999,display:"none"}}>
                               <strong>{'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Church'}</strong>
                             </div>
           </Body>
