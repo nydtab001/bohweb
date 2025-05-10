@@ -7,6 +7,7 @@ import { Body,/* Div, Button, Blockquote, MediaBlock,
   Sabbath, */BasicPage, Image
 } from '../alps-components'; // Import from your custom file
 //import { BOH } from './boh';
+import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -23,6 +24,18 @@ function Home() {
               </Helmet>
         <Body primaryColor="denim" l-wrap>
         <BasicPage
+        aside={<>
+        <div className="calendar-widget">
+  <iframe
+    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Africa%2FJohannesburg&showPrint=0&mode=AGENDA&showTitle=0&src=Ym9oc2RhY29tbXNAZ21haWwuY29t&src=ZmNjNjQ4YWUxMzllYmI3OGM5YzhmNWE5YjAyYmJjNTBhOTdhNmQ4ZDYyNWQyODBmMWExNGE5ZTQ5ZTJlMmVmMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%23F6BF26"
+    style={{ border: 0, width: "100%", height: "400px" }}
+    showPrint="true"
+    title="church-calendar"
+  />
+</div>
+        </>}
+        content={<>content
+          </>}
          footer={{
                                   address: {
                                     
@@ -408,10 +421,12 @@ function Home() {
         '1200': '/bohbg.jpg',
         default: '/bohbg.jpg'
       },
-      kicker: 'Macenas',
-      subtitle: 'We can help you study the Bible so you can find freedom, healing, and hope in jesus.',
-      title: 'A Call to be Unique–the Bible\'s plan for a fulfilled life by standing firm.',
-      url: '#est-doloremque-harum'
+      // kicker: 'Macenas',
+      subtitle: (<><h2 style={{fontSize:"1.8rem",fontWeight:600}}>Welcome to the warmest church south of the pyramids</h2></>),
+      title: (<>
+      <h1 class="title" style={{fontSize:"2.8rem",fontWeight:700}}>Beacon of Hope Seventh-Day Adventist Church</h1>
+      </>),
+      // url: '#est-doloremque-harum'
     }}
     sabbath={{
       backgroundImage: undefined,

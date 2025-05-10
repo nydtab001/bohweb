@@ -26,7 +26,7 @@ function Contact(){
             <BasicPage style={{whiteSpace: 'pre-line'}}
                 aside={<>
                 
-                <div class="contact-card">
+                <div className="contact-card">
                             <address id="contact_address">
                             <h3>Address</h3>
                                 <p><strong>Beacon of Hope Adventist Church</strong></p>
@@ -35,13 +35,13 @@ function Contact(){
                                 <p><a href="mailto:beaconofhope@wzc.adventist.org">beaconofhope@wzc.adventist.org</a></p>
                                 </address>
                         </div>
-                <section class="operating-hours">
+                <section className="operating-hours">
                   <h2>Service Times</h2>
                   <div>
 <strong>Sabbath School:</strong> Saturday, 9:00 AM –
 <strong>Main Service:</strong> Saturday, 10:30 AM –
 <strong>Afternoon Service:</strong> Saturday, 2:00 PM 
-<strong>Vespers:</strong> Saturda
+<strong>Vespers:</strong> Saturday
                   </div>
                 </section>
                 </>}
@@ -162,25 +162,25 @@ function Contact(){
                               }
                             ]
                           },
-                          secondaryNav: {
-                            items: [
-                              {
-                                  text: (
-                                    <>
-                                    <h3 style={{fontSize:22,textTransform: "none",paddingTop:"5px"}}><strong>Quick Links</strong></h3>
-                                    <br/>
-                                    <br/>
-                                    </>
-                                  ),
-                                  //url: 'https://www.facebook.com/beaconofhopezw'
+                          // secondaryNav: {
+                          //   items: [
+                          //     {
+                          //         text: (
+                          //           <>
+                          //           <h3 style={{fontSize:22,textTransform: "none",paddingTop:"5px"}}><strong>Quick Links</strong></h3>
+                          //           <br/>
+                          //           <br/>
+                          //           </>
+                          //         ),
+                          //         //url: 'https://www.facebook.com/beaconofhopezw'
                                 
-                              },
-                              {
-                                text: 'Legal Notice',
-                                url: '#'
-                              }
-                            ]
-                          },
+                          //     },
+                          //     {
+                          //       text: 'Legal Notice',
+                          //       url: '#'
+                          //     }
+                          //   ]
+                          // },
                           text: (
                             <>
                               <h3 style={{fontSize:22}}><strong>Service Times</strong></h3>
@@ -321,7 +321,7 @@ function Contact(){
                     stickyLogo: true
               }}
             />
-            <div style={{backgroundColor:"#708090",color:"white",width:"calc((100vw / 7) * 6 - 0.01px)", padding: "1rem 1.25rem",left:0,position:"absolute",bottom:"0",zIndex:999}}>
+            {/* <div style={{backgroundColor:"#708090",color:"white",width:"calc((100vw / 7) * 6 - 0.01px)", padding: "1rem 1.25rem",left:0,position:"absolute",bottom:"0",zIndex:999}}>
                               <strong>{'Copyright ©'+date.getFullYear()+' Beacon of Hope Seventh-Day Adventist Church'}</strong>
                             </div> */}
           </Body>
