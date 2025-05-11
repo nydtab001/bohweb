@@ -27,7 +27,7 @@ function Home() {
         aside={<>
         <div className="calendar-widget">
   <iframe
-    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Africa%2FJohannesburg&showPrint=0&mode=AGENDA&showTitle=0&src=Ym9oc2RhY29tbXNAZ21haWwuY29t&src=ZmNjNjQ4YWUxMzllYmI3OGM5YzhmNWE5YjAyYmJjNTBhOTdhNmQ4ZDYyNWQyODBmMWExNGE5ZTQ5ZTJlMmVmMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%23F6BF26"
+    src="https://calendar.google.com/calendar/embed?&mode=AGENDA&src=bohsdacomms%40gmail.com&ctz=Africa%2FJohannesburg&color=%23039BE5&src=fcc648ae139ebb78c9c8f5a9b02bbc50a97a6d8d625d280f1a14a9e49e2e2ef2%40group.calendar.google.com&ctz=Africa%2FJohannesburg&color=%23F6BF26"
     style={{ border: 0, width: "100%", height: "400px" }}
     showPrint="true"
     title="church-calendar"
