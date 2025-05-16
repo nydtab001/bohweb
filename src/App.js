@@ -6,6 +6,7 @@ import About from "./pages/about.js";
 import Home from "./pages/home.js";
 import Contact from './pages/contact.js';
 import Ministries from './pages/ministries.js';
+import Sermons from './pages/sermons.js';
 
 
 import { Body,/* Div, Button, Blockquote, MediaBlock,
@@ -23,6 +24,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/ministries" element={<Ministries/>}/>
+      <Route path="/media/sermons" element={<Sermons/>}/>
     </Routes>
     </Router>
   )

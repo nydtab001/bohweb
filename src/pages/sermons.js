@@ -12,17 +12,26 @@ import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-sv
 
 const date = new Date();
 
-function Ministries() {
+function Sermons() {
   return (
     <AlpsContextProvider>
       <Helmet>
         <title>
-          Ministries - Beacon of Hope Sevnth-day Adventist Church
+          Sermons - Beacon of Hope Sevnth-day Adventist Church
         </title>
       </Helmet>
       <Body primaryColor="denim" l-wrap>
         <div >
         <BasicPage
+          content={<><iframe
+  src="https://drive.google.com/file/d/FILE_ID/preview"
+  width="300"
+  height="60"
+  allow="autoplay"
+  title="Audio Sermon"
+  style={{ border: 'none' }}
+></iframe>
+          </>}
           footer={{
                                    address: {
                                      
@@ -358,7 +367,7 @@ function Ministries() {
                 }
           }}
           pageHeader={{
-                title: 'Ministries',
+                title: 'Sermons',
           }}
           sabbath={{
                 backgroundImage: undefined,
@@ -373,4 +382,4 @@ function Ministries() {
   );
 }
 
-export default Ministries;
+export default Sermons;

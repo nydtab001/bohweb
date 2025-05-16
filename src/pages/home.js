@@ -283,7 +283,7 @@ function Home() {
             subnav: [
               {
                 text: 'Sermons',
-                url: '#'
+                url: '/media/sermons'
               }
             ],
             text: 'Media',

@@ -225,7 +225,7 @@ function About() {
                       subnav: [
                         {
                           text: 'Sermons',
-                          url: '#'
+                          url: '/media/sermons'
                         }
                       ],
                       text: 'Media',
