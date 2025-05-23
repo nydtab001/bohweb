@@ -9,6 +9,7 @@ import { Body,/* Div, Button, Blockquote, MediaBlock,
 //import { BOH } from './boh';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import sermons from '../data/sermons.json'; // Adjust the path as necessary
 
 const date = new Date();
 
@@ -31,6 +32,23 @@ function Sermons() {
   title="Audio Sermon"
   style={{ border: 'none' }}
 ></iframe>
+<div className="p-4 max-w-7xl mx-auto">
+  <h1 className="text-3xl font-bold mb-6">Sermons</h1>
+  
+  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {sermons.map((sermon, index) => (
+      <div key={index} className="bg-white shadow-md rounded-lg p-4">
+        <h2 className="text-xl font-semibold">{sermon.title}</h2>
+        <p className="text-gray-600 text-sm mb-2">{sermon.date}</p>
+        <audio controls className="w-full">
+          <source src={sermon.audioUrl} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <p className="text-gray-700 mt-2">{sermon.description}</p>
+      </div>
+    ))}
+  </div>
+  </div>
           </>}
           footer={{
                                    address: {
